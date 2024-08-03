@@ -33,13 +33,13 @@ def verificarResultado(tipo, id):
             break
 
         if resultado[1] is not None and resultado[1] > 0:
-            msg = ("Estouramo a boca e os pcr fez a boa", resultado[1])
+            msg = ("Vitória =)", resultado[1])
             break
         elif resultado[1] is not None and resultado[1] < 0:
-            msg = ("Deu trave vm pra próxima", resultado[1])
+            msg = ("Derrota =( Vamos pra próxima", resultado[1])
             break
         elif resultado[1] is not None and resultado[1] == 0:
-            msg = ("Deu trave vm pra próxima", resultado[1])
+            msg = ("Derrota =( Vamos pra próxima", resultado[1])
             break
     return msg
 
